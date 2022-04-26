@@ -16,5 +16,12 @@
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
 
-shopping_list=[["milk", "eggs", "bacon"],["beer", "cookies","apples"]]
-puts shopping_list
+list1 = ["milk", "eggs", "bacon", "beer"]
+list2 = ["beer", "cookies", "apples"]
+
+shared_list = list1 + list2
+sorted_list = shared_list.sort
+uniq_list = sorted_list.uniq
+puts "buy #{uniq_list[0]}"
+
+# puts (list1 + list2).sort.uniq
